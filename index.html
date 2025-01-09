@@ -1,57 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E V Skanda Gowda - Portfolio</title>
-
-    <!-- Normalize CSS -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-
-    <!-- Your Styles -->
-    <link href="styles.css" rel="stylesheet" />
-
-    <meta
-      description="E V Skanda Gowda's Portfolio - Showcasing innovative design and development projects"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <header class="primary">
-      <div class="wrapper">
-        <div class="logo-container">
-          <h1>E V Skanda<br />Gowda<br />Portfolio</h1>
-          <a href="index.html">
-            <!-- Replace with actual logo -->
-            <img src="logo.png" alt="E V Skanda Gowda logo" id="logo" />
-          </a>
-        </div>
-
-        <nav id="mainnav">
-          <ul>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about-contact">About</a></li>
-            <li><a href="#about-contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <header>
+      <nav>
+        <div class="logo">E V SKANDA</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Rest of the HTML remains similar but with updated content -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>E V Skanda Gowda</h1>
+        <h2>PES1UG22CS200</h2>
+
+        <p>Crafting digital experiences through code and design</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="Project 1" />
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>Web Development</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="Project 2" />
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>UI/UX Design</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x300" alt="Project 3" />
+          <div class="project-info">
+            <h3>Project Three</h3>
+            <p>Mobile App</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-content">
+        <img
+          src="https://via.placeholder.com/300x300"
+          alt="Profile"
+          class="profile-img"
+        />
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm a passionate developer and designer with expertise in creating
+            modern web applications. I focus on delivering clean, efficient, and
+            user-friendly solutions.
+          </p>
+          <div class="skills">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>UI/UX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>evskanda@email.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 234 567 8900</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-location-dot"></i>
+            <p>Bangalore, India</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 E V Skanda Gowda. All rights reserved.</p>
+    </footer>
   </body>
 </html>
